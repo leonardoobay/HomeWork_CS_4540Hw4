@@ -72,6 +72,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ItemHolder>{
 
         public void bind(int pos){
             cursor.moveToPosition(pos);
+            //sets title desc,publisdehd date to whatever the cursor is pointing to at the db
             news_title.setText(cursor.getString(cursor.getColumnIndex(Contract.TABLE_NewsItems.COLUMN_NAME_TITLE)));
             news_description.setText(cursor.getString(cursor.getColumnIndex(Contract.TABLE_NewsItems.COLUMN_NAME_DESCRIPTION)));
             news_time.setText(cursor.getString(cursor.getColumnIndex(Contract.TABLE_NewsItems.COLUMN_NAME_PUBLISHED_AT)));
@@ -90,7 +91,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ItemHolder>{
     }
 
 
-    //***********************
+    //*********************** Old code
 
 
 //    public NewsAdapter(ArrayList<NewsItem> newsData, ItemClickListener listener) {
@@ -160,9 +161,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ItemHolder>{
 //        }
 //    }
 
-    /**
-     * Created by leona on 7/28/2017.
-     */
+
 
 
 }

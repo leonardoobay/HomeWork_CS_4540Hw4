@@ -81,39 +81,6 @@ public class NetworkUtils {
 
 
 
-//    public static ArrayList<NewsItem> parseJSON(String json) throws JSONException {
-//        ArrayList<NewsItem> output = new ArrayList<>();
-//
-//        JSONObject main = new JSONObject(json);
-//
-//        JSONArray articles = main.getJSONArray("articles");
-//        String imgUrl = null;
-//
-//        for(int i = 0; i < articles.length(); i++){
-//            JSONObject article = articles.getJSONObject(i);
-//
-//            String title = article.getString("title");
-//            String description = article.getString("description");
-//            String url = article.getString("url");
-//            String urlToImage = article.getString("urlToImage");
-//            String author = article.getString("author");
-//            String publishedAt = article.getString("publishedAt");
-//
-//            //
-//            JSONArray mediaObjects = article.optJSONArray("media");
-//            if(mediaObjects != null){
-//                JSONObject img = mediaObjects.getJSONObject(0);
-//                JSONArray metaData = img.getJSONArray("media-metadata");
-//                JSONObject thumbNailMeta = metaData.getJSONObject(0);
-//                imgUrl = thumbNailMeta.getString("urToImage");
-//            }
-//
-//            NewsItem item = new NewsItem(url,urlToImage,publishedAt,author,title,description);
-//            output.add(item);
-//        }
-//
-//        return output;
-//    }
 
     //*****************
     public static ArrayList<NewsItem> parseJSON(String json) throws JSONException {

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 /**
  * Created by leona on 6/20/2017.
  */
-
+//no longer needed
 public class OpenNewsJsonUtils {
     /**
      * This method parses JSON from a web response and returns an array of Strings

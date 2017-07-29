@@ -23,6 +23,7 @@ public boolean onStartJob(final JobParameters job) {
 
         @Override
         protected Object doInBackground(Object[] params) {
+            //refreshnews stories when button is clicked or every so time
             RefreshTasks.refreshNewsStories(NewsJob.this);
             return null;
         }

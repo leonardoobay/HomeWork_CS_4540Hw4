@@ -16,6 +16,8 @@ import android.provider.BaseColumns;
     public String source;
  */
 
+//created contract class for db and included image
+
 public class Contract {
     public static class TABLE_NewsItems implements BaseColumns {
         public static final String TABLE_NAME = "Newz";

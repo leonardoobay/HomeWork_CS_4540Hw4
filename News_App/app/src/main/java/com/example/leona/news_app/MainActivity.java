@@ -116,6 +116,7 @@ public android.support.v4.content.Loader<Void> onCreateLoader(int id, final Bund
         @Override
         protected void onStartLoading() {
             super.onStartLoading();
+            //makes progressbar visisble
             spinner.setVisibility(View.VISIBLE);
         }
 
@@ -128,7 +129,7 @@ public android.support.v4.content.Loader<Void> onCreateLoader(int id, final Bund
     };
 }
 
-
+//reads db
     @Override
     public void onLoadFinished(android.support.v4.content.Loader<Void> loader, Void data) {
         spinner.setVisibility(View.GONE);
@@ -158,7 +159,7 @@ public android.support.v4.content.Loader<Void> onCreateLoader(int id, final Bund
     public void load(){
         LoaderManager loaderManager = getSupportLoaderManager();
         loaderManager.restartLoader(NEWS_LOADER,null, this).forceLoad();
-      //  mAdapter.notifyDataSetChanged();
+       mAdapter.notifyDataSetChanged();
     }
 
 
